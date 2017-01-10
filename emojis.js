@@ -24,7 +24,7 @@ request(url, (err, resp, body) => {
     const alt = $(img).attr('alt');
 
     if (url !== undefined && alt !== undefined) {
-      download(url, `${alt}.png`, () => console.log(i));
+      download(url, `${i}_${alt}.png`, () => console.log(i));
     }
   });
 });
